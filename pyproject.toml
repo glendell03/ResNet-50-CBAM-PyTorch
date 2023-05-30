@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "resnet-50-cbam-pytorch"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "resnet_50_cbam_pytorch"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tqdm = "^4.65.0"
+opencv-python = "^4.7.0.72"
+numpy = "^1.24.3"
+torch = "^2.0.1"
+matplotlib = "^3.7.1"
+torchvision = "^0.15.2"
+torchsummary = "^1.5.1"
+seaborn = "^0.12.2"
+pandas = "^2.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
